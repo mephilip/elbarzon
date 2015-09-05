@@ -1,6 +1,10 @@
 wp-config.php
 .sass-cache
 node_modules
+root/node_modules
+npm-debug.log
+bower_components
+build
 
 # Compiled source #
 ###################
