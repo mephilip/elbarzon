@@ -1,0 +1,15 @@
+@include exports("buttons") {
+	
+	.hamburger {
+		background: black;
+		text-align: center;
+	}
+	.burger-icon {
+		background: black;
+	    @include burger(25px, 3px, 5px, #ffffff);
+	}
+	.circle.is-active .burger-icon {
+	    @include burger-to-cross;
+	}
+
+}

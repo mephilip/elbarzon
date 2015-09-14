@@ -1,6 +1,11 @@
 @import "settings";
 
 @import "modules/left-section.scss",
+		"modules/news.scss",
+		"modules/header.scss",
+		"modules/burger.scss",
+		"modules/buttons.scss",
+		"layout/body.scss",
 		"layout/gridmore.scss";
 
 // Or selectively include components

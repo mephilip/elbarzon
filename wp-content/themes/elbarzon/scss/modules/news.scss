@@ -1,0 +1,53 @@
+@include exports("news") {
+	
+	section {
+		
+		&#news {
+			
+			#news-before {
+				border-left: 1px solid #c7c7c7;
+				border-right: 0px solid #c7c7c7;
+			}
+			#news-after {
+				border-right: 1px solid #c7c7c7;
+				border-left: 1px solid #c7c7c7;
+			}
+			#news-before,
+			#news-after {
+				padding: 11px 0;
+				text-align: center;
+				
+				span {
+					
+					img {
+						width: 7px;
+					}
+				}
+			}
+			.news-date {
+				background: #c7c7c7;
+				padding: 14px 0;
+				text-align: center;
+				
+				span {
+					color: white;
+					font-family: gibson-bold;
+					display: block;
+					font-size: 12px;
+				}
+			}
+			.news-article {
+				padding-top: 10px;
+				border-left: 1px solid #c7c7c7;
+				span {
+					
+					color: #666;
+					font-size: 11px;
+					display: block;
+					line-height: 18px;
+					font-family: gibson-light;
+				}
+			}
+		}
+	}
+}

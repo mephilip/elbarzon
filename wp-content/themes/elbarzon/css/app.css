@@ -1,11 +1,177 @@
-section#left-panel #logo {
-	background: black;
-	padding: 20px;
+section .logo-wrapper {
+	padding: 20px 20px 20px;
+}
+
+section .logo-wrapper #logo {
+	background: rgba(0, 0, 0, 0.95);
+	padding: 20px 20px 40px;
+	text-align: center;
+	height: 103px;
+}
+
+section#left-nav {
+	padding: 10px 20px 20px;
+}
+
+section#left-nav .left-nav-wrapper {
+	background: rgba(0, 0, 0, 0.95);
+	padding: 12px;
+}
+
+section#left-nav .left-gallery {
+	padding: 10px 0;
+}
+
+section#left-nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+section#left-nav ul.gallery-left li {
+	text-align: center;
+	color: white;
+	font-size: 13px;
+	padding: 3px;
+	margin: 15px 0;
+}
+
+section#left-nav ul#social-left li {
+	padding: 10px 0 10px;
+	text-align: center;
+	width: 100%;
+}
+
+section#left-nav ul#social-left li img {
+	max-width: 20px;
+	max-height: 35px;
+}
+
+section#news #news-before {
+	border-left: 1px solid #c7c7c7;
+	border-right: 0px solid #c7c7c7;
+}
+
+section#news #news-after {
+	border-right: 1px solid #c7c7c7;
+	border-left: 1px solid #c7c7c7;
+}
+
+section#news #news-before,
+section#news #news-after {
+	padding: 11px 0;
 	text-align: center;
 }
 
+section#news #news-before span img,
+section#news #news-after span img {
+	width: 7px;
+}
+
+section#news .news-date {
+	background: #c7c7c7;
+	padding: 14px 0;
+	text-align: center;
+}
+
+section#news .news-date span {
+	color: white;
+	font-family: gibson-bold;
+	display: block;
+	font-size: 12px;
+}
+
+section#news .news-article {
+	padding-top: 10px;
+	border-left: 1px solid #c7c7c7;
+}
+
+section#news .news-article span {
+	color: #666;
+	font-size: 11px;
+	display: block;
+	line-height: 18px;
+	font-family: gibson-light;
+}
+
+.hamburger {
+	background: black;
+	text-align: center;
+}
+
+.burger-icon {
+	background: black;
+	position: relative;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.burger-icon,
+.burger-icon::before,
+.burger-icon::after {
+	display: block;
+	width: 25px;
+	height: 3px;
+	background-color: #ffffff;
+	-webkit-transition-property: background-color, -webkit-transform;
+	transition-property: background-color, transform;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.burger-icon::before,
+.burger-icon::after {
+	position: absolute;
+	content: "";
+}
+
+.burger-icon::before {
+	top: -8px;
+}
+
+.burger-icon::after {
+	top: 8px;
+}
+
+.circle.is-active .burger-icon {
+	background-color: transparent;
+}
+
+.circle.is-active .burger-icon::before {
+	-webkit-transform: translateY(8px) rotate(45deg);
+	-ms-transform: translateY(8px) rotate(45deg);
+	transform: translateY(8px) rotate(45deg);
+}
+
+.circle.is-active .burger-icon::after {
+	-webkit-transform: translateY(-8px) rotate(-45deg);
+	-ms-transform: translateY(-8px) rotate(-45deg);
+	transform: translateY(-8px) rotate(-45deg);
+}
+
+.body-wrap {
+	background: url("http://localhost:8888/elbarzon/wp-content/themes/elbarzon/images/outdoors.jpg");
+	background-position: -200px;
+}
+
+.idea-wrapper {
+	padding: 20px;
+}
+
+.idea-wrapper .idea {
+	background: rgba(0, 0, 0, 0.95);
+	padding: 20px;
+}
+
+.idea-wrapper .idea p {
+	color: white;
+}
+
 .container {
-	width: 960px;
 	margin: 0 auto;
 	clear: both;
 }
@@ -182,7 +348,7 @@ select {
 
 .row {
 	margin: 0 auto;
-	max-width: 62.5rem;
+	max-width: 57.875rem;
 	width: 100%;
 }
 
@@ -208,7 +374,7 @@ select {
 }
 
 .row .row {
-	margin: 0 -0.9375rem;
+	margin: 0 -0.46875rem;
 	max-width: none;
 	width: auto;
 }
@@ -241,8 +407,8 @@ select {
 
 .column,
 .columns {
-	padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
+	padding-left: 0.46875rem;
+	padding-right: 0.46875rem;
 	width: 100%;
 	float: left;
 }
@@ -406,8 +572,8 @@ select {
 .column,
 .columns {
 	position: relative;
-	padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
+	padding-left: 0.46875rem;
+	padding-right: 0.46875rem;
 	float: left;
 }
 
@@ -557,8 +723,8 @@ select {
 
 .row.small-uncollapse > .column,
 .row.small-uncollapse > .columns {
-	padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
+	padding-left: 0.46875rem;
+	padding-right: 0.46875rem;
 	float: left;
 }
 
@@ -713,8 +879,8 @@ select {
 .column,
 .columns {
 	position: relative;
-	padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
+	padding-left: 0.46875rem;
+	padding-right: 0.46875rem;
 	float: left;
 }
 
@@ -864,8 +1030,8 @@ select {
 
 .row.medium-uncollapse > .column,
 .row.medium-uncollapse > .columns {
-	padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
+	padding-left: 0.46875rem;
+	padding-right: 0.46875rem;
 	float: left;
 }
 
@@ -1011,6 +1177,14 @@ select {
 	position: relative;
 	right: 91.66667%;
 	left: auto;
+}
+
+}
+
+@media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+
+.container {
+	width: 960px;
 }
 
 }
@@ -1164,8 +1338,8 @@ select {
 .column,
 .columns {
 	position: relative;
-	padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
+	padding-left: 0.46875rem;
+	padding-right: 0.46875rem;
 	float: left;
 }
 
@@ -1315,8 +1489,8 @@ select {
 
 .row.large-uncollapse > .column,
 .row.large-uncollapse > .columns {
-	padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
+	padding-left: 0.46875rem;
+	padding-right: 0.46875rem;
 	float: left;
 }
 

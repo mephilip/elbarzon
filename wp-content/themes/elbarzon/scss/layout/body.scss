@@ -1,0 +1,21 @@
+@include exports("body") {
+	
+	.body-wrap {
+		background: url('http://localhost:8888/elbarzon/wp-content/themes/elbarzon/images/outdoors.jpg');
+		background-position: -200px;
+	}
+	
+	.idea-wrapper {
+		padding: 20px;
+		
+		.idea {
+			background: rgba(0,0,0,.95);
+			padding: 20px;
+			
+			p {
+				color: white;
+			}
+		}
+	}
+	
+}

@@ -1,9 +1,59 @@
-section {
-	&#left-panel {
-		#logo {
-			background: black;
-			padding: 20px;
-			text-align: center;
+@include exports("left-section") {
+	
+	section {
+		
+		.logo-wrapper {
+			padding: 20px 20px 20px;
+			
+			#logo {
+				background: rgba(0,0,0,.95);
+				padding: 20px 20px 40px;
+				text-align: center;
+				height: 103px;
+			}
+		}
+		
+		&#left-nav {
+			padding: 10px 20px 20px;
+			
+			.left-nav-wrapper {
+				background: rgba(0,0,0,.95);
+				padding: 12px;
+			}
+			
+			.left-gallery {
+				padding: 10px 0;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				
+				&.gallery-left {
+					
+					li {
+						text-align: center;
+						color: white;
+						font-size: 13px;
+						padding: 3px;
+						margin: 15px 0;
+					}
+				}
+				&#social-left {
+					
+					li {
+						padding: 10px 0 10px;
+						text-align: center;
+						width: 100%;
+						
+						img {
+							max-width: 20px;
+							max-height: 35px;
+						}
+					}
+				}
+			}
 		}
 	}
+	
 }
